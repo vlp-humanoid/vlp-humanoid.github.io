@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Hierarchical Vision-Language Planning for Multi-Step Humanoid Manipulation">
+  <meta name="keywords" content="humanoid manipulation, foundation model for robot planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planner-Ordered Policy </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+</head>
+
+<section class="hero" style="background-color: #ffffff; z-index:-10">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Hierarchical Vision-Language Planning <br> for Multi-Step Humanoid Manipulation</h1>
+          <!-- <h3 class="title is-4 publication-venue"><a target="_blank" href="https://2025.ieee-icra.org/">ICRA 2025</a></h3> -->
+          <h3 class="title is-4 conference-authors" style="margin-bottom: 0px !important;">In Submission</h3>,
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a target="_blank" href="">André Schakkal</a><sup>1, 2</sup>,</span>
+            <span class="author-block">
+                <a target="_blank" href="https://www.benzandonati.co.uk/">Ben Zandonati</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="https://zt-yang.com/">Zhutian Yang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="https://azizan.mit.edu/">Navid Aziza</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>MIT,</span>
+            <span class="author-block"><sup>2</sup>EPFL</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                   <!-- "https://arxiv.org/abs/2211.01576" -->
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (UPDATE!!!)</span>
+                </a>
+              </span>
+
+            <!-- Video Link. -->
+            <span class="link-block">
+              <a target="_blank" href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video (UPDATE!!!)</span>
+              </a>
+            </span>
+
+            <!-- Code Link.  -->
+            <span class="link-block">
+              <a target="_blank" href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code (UPDATE!!!)</span>
+                </a>
+            </span>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-fullhd" style="margin-bottom: -300px; z-index:-200">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <video id="teaser" autoplay muted loop height="300px">
+            <source src="media/kitchens.mp4"
+                    type="video/mp4">
+          </video>
+          </br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="hero is-small">
+  <div class="container is-max-widescreen" style="padding: 2rem">
+
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+      
+      <h3 class="title is-3 has-text-centered">Abstract</h3>
+        <p class="justify abstract">
+            To enable humanoid robots to operate effectively in factory and household environments, they must reliably execute autonomous, multi-step manipulation tasks. This work introduces a hierarchical planning and control framework designed for multi-step humanoid manipulation tasks. The proposed system comprises three distinct layers: (1) a low-level RL-based tracking controller responsible for whole-body motion tracking; (2) a mid-level set of action experts trained via imitation learning from demonstration data, autonomously producing motion targets; and (3) a high-level vision-language planning module that determines which skills should be executed and monitors their real-time completion using vision-language models (VLMs). Experimental validation is performed on a Unitree G1 humanoid robot executing a representative push-pick-place task. Over 40 real-world trials, the hierarchical system achieved a 72.5\% success rate in completing the full manipulation sequence. These experiments confirm the feasibility and robustness of the proposed hierarchical system, highlighting the practicality of vision-language-informed skill monitoring for multi-step manipulation scenarios.
+        </p>
+
+      <img src="media/figures/final_diagram.png" class="full-image" style="width:100%;padding-bottom: 2.5rem" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-two-thirds">
+            <h3 class="title is-3 has-text-centered">Supplementary Video</h3>
+            <div class="publication-video">
+              <!-- https://www.youtube.com/watch?v=VLikGooIdwg&ab_channel=ZhutianYang-->
+              <iframe src=""
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{ravan2024combiningplanningdiffusionmobility,
+            title={Combining Planning and Diffusion for Mobility with Unknown Dynamics}, 
+            author={Yajvan Ravan and Zhutian Yang and Tao Chen and Tomás Lozano-Pérez and Leslie Pack Kaelbling},
+            year={2024},
+            eprint={2410.06911},
+            archivePrefix={arXiv},
+            primaryClass={cs.RO},
+            url={https://arxiv.org/abs/2410.06911}, 
+      }</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> made by the amazing <a href="https://keunhong.com/">Keunhong Park</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

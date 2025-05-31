@@ -1,1 +1,1 @@
-# vlp-humanoid.github.io
+# Hierarchical Vision-Language Planning for Multi-Step Humanoid Manipulation
